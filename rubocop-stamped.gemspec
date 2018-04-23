@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
-  s.authors = ["Samped".freeze]
+  s.authors = ["Stamped".freeze]
   s.date = "2018-04-23"
   s.description = "Code style checking for Stamped Ruby repositories, based on RuboCop".freeze
   s.email = "engineering@stamped.ai".freeze
@@ -22,10 +22,16 @@ Gem::Specification.new do |s|
     ".document",
     ".ruby-version",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
+    "README.md",
     "Rakefile",
     "VERSION",
-    "lib/rubocop-stamped.rb"
+    "config/default.yml",
+    "config/rails.yml",
+    "config/rspec.yml",
+    "lib/rubocop-stamped.rb",
+    "rubocop-stamped.gemspec"
   ]
   s.homepage = "http://github.com/stampedai/rubocop-stamped".freeze
   s.licenses = ["MIT".freeze]
@@ -39,6 +45,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<rubocop>.freeze, ["~> 0.52"])
       s.add_runtime_dependency(%q<rubocop-github>.freeze, ["~> 0.10"])
       s.add_runtime_dependency(%q<rubocop-airbnb>.freeze, ["~> 1.0"])
+      s.add_runtime_dependency(%q<rubocop-rspec>.freeze, ["~> 1.22"])
       s.add_development_dependency(%q<shoulda>.freeze, [">= 0"])
       s.add_development_dependency(%q<rdoc>.freeze, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>.freeze, ["~> 1.0"])
@@ -48,6 +55,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rubocop>.freeze, ["~> 0.52"])
       s.add_dependency(%q<rubocop-github>.freeze, ["~> 0.10"])
       s.add_dependency(%q<rubocop-airbnb>.freeze, ["~> 1.0"])
+      s.add_dependency(%q<rubocop-rspec>.freeze, ["~> 1.22"])
       s.add_dependency(%q<shoulda>.freeze, [">= 0"])
       s.add_dependency(%q<rdoc>.freeze, ["~> 3.12"])
       s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
@@ -58,6 +66,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rubocop>.freeze, ["~> 0.52"])
     s.add_dependency(%q<rubocop-github>.freeze, ["~> 0.10"])
     s.add_dependency(%q<rubocop-airbnb>.freeze, ["~> 1.0"])
+    s.add_dependency(%q<rubocop-rspec>.freeze, ["~> 1.22"])
     s.add_dependency(%q<shoulda>.freeze, [">= 0"])
     s.add_dependency(%q<rdoc>.freeze, ["~> 3.12"])
     s.add_dependency(%q<bundler>.freeze, ["~> 1.0"])
