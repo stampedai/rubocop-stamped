@@ -1,5 +1,5 @@
 inherit_gem:
   rubocop-github:
     - config/default.yml
-  rubocop-airbnb:
-    - config/default.yml
+  # rubocop-airbnb:
+  #   - config/default.yml
