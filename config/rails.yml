@@ -3,3 +3,6 @@ inherit_gem:
     - config/rails.yml
   rubocop-airbnb:
     - config/rails.yml
+
+Rails:
+  Enabled: true
