@@ -14,12 +14,12 @@ require 'juwelier'
 Juwelier::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "rubocop-stamped"
-  gem.homepage = "http://github.com/phildionne/rubocop-stamped"
+  gem.homepage = "http://github.com/stampedai/rubocop-stamped"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "dionne.phil@gmail.com"
-  gem.authors = ["Philippe Dionne"]
+  gem.summary = %Q{Code style checking for Stamped Ruby repositories}
+  gem.description = %Q{Code style checking for Stamped Ruby repositories, based on RuboCop}
+  gem.email = "engineering@stamped.ai"
+  gem.authors = ["Stamped"]
 
   # dependencies defined in Gemfile
 end
