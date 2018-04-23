@@ -104,6 +104,7 @@ DEPENDENCIES
   rubocop (~> 0.52)
   rubocop-airbnb (~> 1.0)
   rubocop-github (~> 0.10)
+  rubocop-rspec (~> 1.22)
   shoulda
   simplecov
 

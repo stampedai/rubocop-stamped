@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem 'rubocop', '~> 0.52', require: false
 gem 'rubocop-github', '~> 0.10'
 gem 'rubocop-airbnb', '~> 1.0'
+gem 'rubocop-rspec', '~> 1.22'
 
 group :development do
   gem "shoulda", ">= 0"
