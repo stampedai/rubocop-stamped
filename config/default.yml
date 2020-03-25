@@ -1,5 +1,43 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - standard/cop/semantic_blocks
+
 inherit_gem:
-  rubocop-github:
-    - config/default.yml
-  # rubocop-airbnb:
-  #   - config/default.yml
+  standard: config/base.yml
+
+inherit_from:
+  - md.yml
+  - performance.yml
+  - rspec.yml
+
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: false
+
+# Standard
+
+Standard/SemanticBlocks:
+  Enabled: false
+
+# Stamped
+
+Layout/LineLength:
+  Max: 120
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+  SupportedStyles:
+    - space
+    - no_space
+    - compact
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
