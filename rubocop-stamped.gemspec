@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
 
   # @see https://help.github.com/en/github/managing-packages-with-github-package-registry/configuring-rubygems-for-use-with-github-package-registry
   gem.metadata = {
-    "github_repo" => "ssh://github.com/stampedai/stamped-rubocop"
+    "github_repo" => "ssh://github.com/stampedai/stamped-rubocop",
   }
 
   gem.files = `git ls-files config`.split("\n")
