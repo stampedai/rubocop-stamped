@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name = "rubocop-stamped"
-  gem.version = "0.0.2"
+  gem.version = "1.0.0"
   gem.authors = ["Philippe Dionne"]
   gem.email = "p@stamped.ai"
 
